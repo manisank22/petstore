@@ -122,6 +122,8 @@ After logging in, you can use the Azure portal to create, manage, and monitor yo
    ```bash
    az acr login --name demopetstorecr .
    ```
+  > 🔗 If you get `DOCKER_COMMAND_ERROR` during authentication, refer to [Fixing Azure Container Registry Authentication Issue](./fixing-acr-authentication-issue.md).
+
 - Tag the Docker image using the `docker tag` command. Tagging provides a way to label different versions of your image:
    ```bash
   docker tag <image-name>:<tag> <acr-name>.azurecr.io/<image-name>:<tag>
